@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+
+  <div class="container">
+
+    <header class="top-bar">
+      <h1>☑ Task Manager</h1>
+      <button id="themeBtn">☀</button>
+    </header>
+
+    <section class="create-box">
+      <h2>➕ Create New Task</h2>
+
+      <form id="taskForm">
+        <input id="taskInput" type="text" placeholder="Enter task title" />
+
+        <select id="categoryInput">
+          <option value="personal">Personal</option>
+          <option value="study">Study</option>
+          <option value="work">Work</option>
+        </select>
+
+        <button type="submit">＋ Add Task</button>
+      </form>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h3>Total Tasks</h3>
+        <p id="totalCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Completed</h3>
+        <p id="completedCount">0</p>
+      </div>
+
+      <div class="stat-card">
+        <h3>Pending</h3>
+        <p id="pendingCount">0</p>
+      </div>
+    </section>
+
+    <section id="taskList"></section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
