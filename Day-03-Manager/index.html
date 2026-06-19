@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <span>☑</span>
+          <h1>Task Manager</h1>
+        </div>
+
+    <button id="themeBtn" class="theme-btn">☀️</button>
+      </header>
+      <!-- create new task  -->
+      <section class="task-box">
+        <h2><span>＋</span> Create New Task</h2>
+
+        <div class="form">
+          <input id="taskInput" type="text" placeholder="Enter your task" />
+
+          <select id="categoryInput">
+            <option>Personal</option>
+            <option>Work</option>
+            <option>Study</option>
+          </select>
+
+          <button id="addBtn" class="add-btn">＋ Add Task</button>
+
+          
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="card">
+          <h3>Total Tasks</h3>
+          <p id="totalTasks">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+        </div>
+      </section>
+    <div id="taskList"></div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
